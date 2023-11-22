@@ -1,0 +1,6 @@
+git clone https
+git add .
+git status
+git pull #for access the repositery file
+git commit -m 'message'
+git push
