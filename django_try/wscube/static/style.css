@@ -1,0 +1,429 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'roboto', sans-serif;
+}
+
+nav {
+    display: -webkit-flex;
+    justify-content: space-between;
+    background-color: #eee0e0;
+    padding: 22px;
+    box-shadow: 0px 2px 2px 2px rgb(134, 126, 126);
+}
+
+body {
+    background-color: #f8f3f3;
+}
+
+nav .log {
+    font-size: 35px;
+    text-shadow: solid rgb(172, 33, 33);
+    color: rgb(18, 102, 102);
+}
+
+
+nav ul li {
+    list-style: none;
+}
+
+ul li a {
+    margin-inline: 22px;
+    display: inline-flex;
+    font-size: 22px;
+
+
+}
+
+ul li #home {
+    color: blue;
+
+}
+
+ul li img {
+    background-color: #eee0e0;
+    size: 10px;
+    display: inline-flex;
+}
+
+ul li img:hover {
+    background-color: transparent;
+    border-bottom: 2px solid black;
+}
+
+ul {
+    margin-right: px;
+    margin-top: 7px;
+}
+
+ul li a:hover {
+
+
+    border-bottom: 2px solid rgb(49, 49, 78);
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main .maintext {
+    margin-top: 145px;
+}
+
+.main .maintext h2 {
+    font-size: 45px;
+    border-bottom: 2px solid black;
+    font-style: italic;
+}
+
+.main .maintext h1 {
+    font-size: 60px;
+    font-style: italic;
+
+}
+
+.main .maintext p {
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 12px;
+
+}
+
+.main .maintext button {
+    width: 145px;
+    height: 40px;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: white;
+    background-color: rgb(12, 136, 136);
+    margin-top: 24px;
+}
+
+.maintext h2:hover {
+    color: rgb(43, 139, 139);
+
+}
+
+.main .maintext button:hover {
+    color: black;
+    background-color: transparent;
+    border: 3px solid rgb(0, 0, 0);
+
+
+}
+
+.main img {
+    width: auto;
+    height: auto;
+    margin-top: 35px;
+}
+
+.trend .head {
+    text-align: center;
+    justify-content: space-between;
+    padding: 33px;
+    margin-top: 22px;
+    border-bottom: 3px solid seashell rgb(13, 59, 13);
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    margin-top: 50px;
+
+}
+
+.trend .head:hover {
+    border-bottom: 3px solid rgb(18, 51, 51);
+
+}
+
+.trends .head {
+    text-align: center;
+    justify-content: space-between;
+    padding: 33px;
+    margin-top: 22px;
+    border-bottom: 3px solid seashell rgb(13, 59, 13);
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    margin-top: 50px;
+
+}
+
+.trends .head:hover {
+    border-bottom: 3px solid rgb(18, 51, 51);
+}
+
+.head span {
+    color: rgb(10, 87, 87);
+    margin-bottom: 30px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+}
+
+.card .crd {
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    margin-inline: 30px;
+    box-sizing: content-box;
+
+}
+
+.card .crd:hover {
+    outline: auto;
+}
+
+.crd img {
+    width: 100%;
+    height: 80%;
+}
+
+.crd img:hover {
+    cursor: pointer;
+
+}
+
+.crd1 img {
+    width: 15px;
+    height: 20px;
+}
+
+.crd1 button:hover {
+    cursor: pointer;
+    background-color: rgb(58, 55, 55);
+    color: white;
+}
+
+.card .blog {
+    background-color: white;
+    width: 700px;
+    margin-inline: 30px;
+    display: flex;
+}
+
+.card .blog img {
+    width: 310px;
+    height: 390px;
+    display: flex;
+    margin-inline-end: auto;
+    background-color: rgb(255, 255, 255);
+    margin-inline: 15px;
+
+}
+
+.blog .blogtext h2 {
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.blog .blogtext p {
+    font-size: medium;
+    margin-top: 12px;
+    text-rendering: optimizeSpeed;
+
+
+}
+
+.about {
+    display: none;
+    background-color: #ffffff;
+}
+
+.abouttext {
+
+    color: rgb(60, 60, 121);
+    text-align: center;
+    font-size: 40px;
+    margin-top: 100px;
+
+}
+
+.aboutus {
+
+    background-color: rgb(30, 73, 73);
+    color: white;
+    padding: 55px;
+    font-size: 22px;
+}
+
+.yes {
+    background-color: white;
+
+}
+
+.yes p {
+    display: -ms-inline-grid;
+    background-image: url('avatar-2191932_1280.png');
+    background-repeat: no-repeat;
+    background-size: 80% 100%;
+    background-position: center;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20%;
+    font-size: 30px;
+
+
+
+
+}
+
+.contact {
+    background-image: url('top-view-chat-bubbles-with-telephone-receiver-copy-space.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.cont {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.cont h1 {
+    font-size: 70px;
+
+
+}
+
+.caller {
+    display: flexbox;
+    position: relative;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.caller:hover {
+    cursor: pointer;
+
+}
+
+.call {
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    padding: 30PX;
+    margin-top: 90px;
+
+}
+
+.call1 p {
+    padding-left: 15px;
+}
+
+.call2 p {
+    padding-left: 15px;
+}
+
+.call img {
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    display: flex;
+
+}
+
+.call p {
+
+    padding-left: 15px;
+    display: flexbox;
+    margin-top: 0%;
+}
+
+.call1 {
+    padding: 30px;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+}
+
+.call1 img {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+
+}
+
+.call2 {
+    margin-top: 30px;
+    padding: 30px;
+    justify-content: left;
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.call2 img {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+
+}
+
+.letter {
+    background-color: rgb(24, 22, 22);
+    justify-content: space-between;
+    padding: 43px;
+    color: white;
+    display: flex;
+    margin-top: 150px;
+
+
+}
+
+.letter .lettertext p {
+    margin-top: 10px;
+}
+
+.letter .inp input {
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    outline: none;
+}
+
+.letter .inp button {
+    width: 60px;
+    height: 30px;
+    background-color: rgb(50, 104, 104);
+    color: white;
+}
+
+.letter .inp button:hover {
+    background-color: rgb(128, 184, 184);
+    outline: auto;
+}
+
+.footer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.footer .footertext {
+    margin-inline: 70px;
+    padding: 40px;
+    text-transform: capitalize;
+    justify-content: space-between;
+}
+
+.footer .footertext h2 {
+    margin-bottom: 12px;
+}
+
+.footer .footertext p {
+    margin-bottom: 5px;
+}
+
+.footer .footertext p:hover {
+    cursor: pointer;
+    background-color: rgb(177, 169, 169);
+}
