@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1><b><u> COUNTER LIST </b></u></h1><br>
+{% for counter in object_list %}
+<h1>{{ counter.title}}     ------><strong>{{ counter.count}}
+	<a href="{% url 'detail-count' counter.pk %}"> Detail</a>
+	<a href="{% url 'update-count' counter.pk %}"> Update</a>
+	<a href="{% url 'delete-count' counter.pk %}"> Delete</a></strong>
+	</h1></br>
+
+{% endfor %}
+<a href="{% url 'create-count' %}"><input type = "button" value = "Create Counter"></a>
+
+</body>
+</html>

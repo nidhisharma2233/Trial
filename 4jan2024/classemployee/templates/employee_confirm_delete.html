@@ -1,0 +1,44 @@
+<!-- employee_confirm_delete.html -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirm Delete</title>
+    <style>
+        /* Your CSS styles for confirmation delete */
+        /* Example styles - modify as needed */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #b02a37;
+        }
+    </style>
+</head>
+<body>
+{% extends 'base.html'%}
+{% block content%}
+    <h1>Confirm Delete</h1>
+    <p>Are you sure you want to delete "{{ employee.name }}"?</p>
+    <form action="{% url 'employee_delete' employee.pk %}" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Delete">
+    </form>
+    <a href="{% url 'employee_detail' employee.pk %}">Cancel</a>
+{% endblock %}
+</body>
+</html>

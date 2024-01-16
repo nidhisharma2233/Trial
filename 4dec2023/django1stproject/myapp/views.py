@@ -30,13 +30,14 @@ def add(request):
    print("heloo")
    if request.method == 'POST':
       name = request.POST['name']
+      last_name=request.POST['lastname']
       mail = request.POST['emailid']
       dob = request.POST['dob']
       gender = request.POST['gender']
 
 
 
-      new_emp = registermodel(username=name, email=mail, dob=dob, gender=gender)
+      new_emp = registermodel(username=name,last_name=last_name ,email=mail, dob=dob, gender=gender,)
       new_emp.save()
       return HttpResponse('Employee Added Successfully')
 

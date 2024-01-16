@@ -1,0 +1,57 @@
+<!-- employee_form.html -->
+{% extends 'base.html'%}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% if form.instance.pk %}Edit Employee{% else %}New Employee{% endif %}</title>
+    <style>
+        /* Your CSS styles for employee form */
+        /* Example styles - modify as needed */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            color: #4CAF50;
+
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .back-link {
+            display: block;
+            margin-top: 10px;
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+
+{% block content%}
+    <h1>{% if form.instance.pk %}Edit Employee{% else %}New Employee{% endif %}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Save">
+    </form>
+    <a href="{% url 'employee_list' %}" class="back-link">Back to List</a>
+{% endblock %}
+</body>
+</html>
